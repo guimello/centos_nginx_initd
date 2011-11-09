@@ -1,0 +1,22 @@
+CentOS nginx init.d script
+
+Thank this guy here (not me): http://articles.slicehost.com/2009/2/2/centos-adding-an-nginx-init-script
+
+sudo vim /etc/init.d/nginx
+
+Added the content of the nginx file. Pay attention to the nginx path. Change accordingly.
+
+sudo chmod +x /etc/init.d/nginx
+
+sudo /sbin/chkconfig nginx on
+
+
+Check everything is right with:
+
+chkconfig --list nginx
+
+Now:
+
+sudo /etc/init.d/nginx start|stop|restart|reload|status|configtest
+
+Wee!
